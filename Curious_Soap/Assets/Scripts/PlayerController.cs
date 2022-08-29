@@ -20,7 +20,11 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.RightArrow))
         {
-            surferBody.AddTorque (-torqueAmount);
+            surferBody.AddTorque(-torqueAmount);
+        }
+        else if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            surferBody.AddTorque (torqueAmount);
         }
     }
 }
